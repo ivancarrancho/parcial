@@ -41,7 +41,7 @@
         android:layout_toStartOf="@+id/num2"
         android:layout_toLeftOf="@+id/num2"
         android:onClick="calculate"
-        android:text="+"
+        android:text="Generar"
         android:textSize="24sp" />
 
 
