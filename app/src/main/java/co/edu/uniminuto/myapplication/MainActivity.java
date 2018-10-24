@@ -23,11 +23,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+    }
+
+
+    public void calculate(View view) {
+        val1 = Integer.parseInt(num1.getText().toString());
+        val2 = Integer.parseInt(num2.getText().toString());
+
+
         listanumeros = (ListView) findViewById(R.id.listview);
         ArrayList<Integer> numberList= new ArrayList<>();
 
-        val1 = Integer.parseInt(num1.getText().toString());
-        val2 = Integer.parseInt(num2.getText().toString());
 
         for(i=0;i<=val2;i++){
             int numero = (int) (Math.random() * val1) + 1;
@@ -36,5 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
         ArrayAdapter adaptador = new ArrayAdapter(this, android.R.layout.simple_list_item_1, numberList);
         listanumeros.setAdapter(adaptador);
+
     }
+
 }

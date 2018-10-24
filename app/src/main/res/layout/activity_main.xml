@@ -30,6 +30,21 @@
         android:inputType="number"
         android:textSize="20sp" />
 
+    <Button
+        android:id="@+id/btnSuma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/num2"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="-38dp"
+        android:layout_marginRight="-38dp"
+        android:layout_toStartOf="@+id/num2"
+        android:layout_toLeftOf="@+id/num2"
+        android:onClick="calculate"
+        android:text="+"
+        android:textSize="24sp" />
+
+
     <ListView
         android:id="@+id/listview"
         android:layout_width="match_parent"
